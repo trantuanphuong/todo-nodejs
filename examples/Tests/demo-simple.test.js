@@ -1,4 +1,4 @@
-const demoSimple = require('../refs/DemoSimpleTest');
+const demoSimple = require('../demo-simpleTest');
 
 test('add two number', () => {
     return expect(demoSimple.addFunc(2, 3)).toBe(5);
@@ -60,13 +60,15 @@ test('test throw exeption divideByZero', () => {
     expect(() => divideByZero()).toThrow(/can not/);
 });
 
-test('test doublefunc', () => {
-    return demoSimple.doubleFunc(12).then(data => {
-       expect(data).toBe(24);
-    });
-});
 
-test('test async', async () => {
-    const data = await demoSimple.syncFunc(12);
-    expect(data).toBe(24);
-  });
+
+
+
+  
+
+
+
+
+
+
+
