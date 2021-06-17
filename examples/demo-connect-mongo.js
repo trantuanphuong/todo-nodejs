@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const config = require("./../config")
+const config = require("../config")
 
 const uri = config.getDbConnectionString();
 //console.log(config.getDbConnectionString());
