@@ -21,7 +21,7 @@ app.use("/assets", express.static(path.join(__dirname, 'public')));
 
 app.use('/', require('./routes/home'));
 app.use('/todo', require('./routes/todos'))
-
+app.use('/', require('./routes/login'))
 mongoose.connect(config.getDbConnectionString(), { useNewUrlParser: true, useUnifiedTopology: true });
 
 // catch 404 and forward to error handler

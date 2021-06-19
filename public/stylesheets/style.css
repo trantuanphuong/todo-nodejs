@@ -37,6 +37,10 @@ button {
 .todoDone {
   text-decoration: line-through;
 }
+.errorLabel {
+  color: darkred;
+  margin-top: 20px;
+}
 
 .checkbox {
   margin: 10px;

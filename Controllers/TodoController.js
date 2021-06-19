@@ -29,10 +29,10 @@ function initDatas(req, res) {
             res.status(500).json(err);
         }
     });
-  }
+}
 
 function getTodos (req, res) {
-    Todos.find(function (err, results) {
+    Todos.find({userid: req.cookies.userid}, function (err, results) {
         if (err) {
             // res.status(500).json(err);
             throw err;
@@ -45,7 +45,9 @@ function getTodos (req, res) {
 }
 
 function createNew(req, res) {
+    console.log(req.cookies)
     var todo = {
+        userid: req.cookies.userid,
         text: req.body.text,
         isDone: req.body.isDone
     }

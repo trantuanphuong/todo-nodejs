@@ -16,11 +16,11 @@
   
 <body ng-controller="Ctrl">
   <div class="container " >
-    <div class="row"></div>
-    <div class="text-center">
+    <% include header %>
+    <!-- <div class="text-center">
       <h1>{{appName}} <span class="badge bg-info text-light"> {{todos.length}} </span></h1>
     </div>
-    </div>
+    </div> -->
     
     <div id="todo-list" class="row">
           <div class="checkbox" ng-repeat="todo in todos">
